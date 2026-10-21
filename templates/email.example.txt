@@ -1,22 +1,21 @@
 Hi {{name}},
 
-I’m Aditi Sharma, a Software Engineer based in Bengaluru with 3+ years of combined professional and internship experience building production AI systems and full-stack applications. I’m currently working at Orqbyte on real-time voice AI systems using Python, FastAPI, Amazon Bedrock, and AWS.
+I hope you're doing well.
 
-A few highlights from my experience:
-- Built a real-time speech-to-speech AI pipeline targeting sub-500 ms response times.
-- Developed a RAG-based codebase assistant and scalable, event-driven backend systems on AWS.
-- Improved server response times by 45% through Redis caching.
-- Solved 1,000+ DSA problems across coding platforms.
+I'm a Software Development Engineer with approximately **3+ years of experience**, including internship experience, building backend APIs, scalable applications, and full-stack products using **Python, FastAPI, Node.js, Express.js, React.js, TypeScript, PostgreSQL, MongoDB, Redis, AWS, Docker, WebSockets, Pipecat, LangChain, LangGraph, RAG, LLMs, and Java Spring Boot**. I've also worked on real-time voice AI and LLM-based systems.
 
-I’m actively exploring Software Engineer, Backend Developer, and SDE-1 opportunities and wanted to check if there are any relevant openings at {{company}}. If there’s a suitable role available now or one opens up in the future, I’d really appreciate it if you could let me know or consider referring me.
+I have a strong foundation in Data Structures and Algorithms, have **solved 1000+ problems** across various coding platforms, with a LeetCode rating of 1805 (Top 7%), CodeChef 3-Star, and Codeforces Pupil.
 
-**Resume:** https://drive.google.com/file/d/1iUU4ZzYFAwxTLmaS-LKZm2cCayx5xM6N/view?usp=sharing  
-**LinkedIn:** https://www.linkedin.com/in/aditi-sharma-dev/  
-**GitHub:** https://github.com/aditisharma32
+I'm currently exploring **SDE-1, Backend Developer, and Full-Stack Developer** opportunities at your organization and am an **immediate joiner**. Could you please let me know if there are any relevant openings?
 
-Thank you for your time. I’d be happy to share more about my experience and discuss how I could contribute to your team.
+I've attached my resume for your consideration.
 
-Best regards,  
-Aditi Sharma  
-+91 90790 92859  
+Thank you for your time. I look forward to hearing from you.
+
+Best regards,
+Aditi Sharma
++91-9079092859
 aditisharma0032@gmail.com
+Resume: https://drive.google.com/file/d/1iUU4ZzYFAwxTLmaS-LKZm2cCayx5xM6N/view
+LinkedIn: https://www.linkedin.com/in/aditi-sharma-dev/
+GitHub: https://github.com/aditisharma32

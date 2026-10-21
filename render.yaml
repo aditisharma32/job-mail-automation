@@ -30,9 +30,9 @@ services:
       - key: CAMPAIGN_SECRET
         generateValue: true
       - key: BATCH_SIZE
-        value: "15"
+        value: "20"
       - key: SEND_DELAY_MS
-        value: "1500"
+        value: "2500"
       - key: RETRY_FAILED
         value: "false"
       - key: PROCESS_BOUNCES

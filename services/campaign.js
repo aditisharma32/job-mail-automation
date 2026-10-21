@@ -24,6 +24,21 @@ function tpl(name) {
 const HTML_TEMPLATE = tpl('email.html');
 const TEXT_TEMPLATE = tpl('email.txt');
 
+function getAttachments() {
+  const candidates = [
+    path.join(__dirname, '..', 'resume.pdf'),
+    path.join(__dirname, '..', 'Resume.pdf'),
+    path.join(__dirname, '..', 'templates', 'resume.pdf'),
+    path.join(__dirname, '..', 'templates', 'Resume.pdf'),
+  ];
+  for (const p of candidates) {
+    if (fs.existsSync(p)) {
+      return [{ filename: 'Aditi_Sharma_Resume.pdf', path: p }];
+    }
+  }
+  return undefined;
+}
+
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -142,7 +157,8 @@ async function runCampaign(opts = {}) {
       summary.results.push({ ...base, outcome: 'dry-run', subject });
     } else {
       try {
-        const info = await mailer.sendMail({ to: contact.email, subject, html, text });
+        const attachments = getAttachments();
+        const info = await mailer.sendMail({ to: contact.email, subject, html, text, attachments });
         summary.sent += 1;
         const writeErr = await writeStatus(contact, 'Sent');
         summary.results.push({

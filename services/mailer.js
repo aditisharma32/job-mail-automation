@@ -33,19 +33,24 @@ async function verifyTransport() {
   await transporter.verify();
 }
 
-async function sendMail({ to, subject, html, text }) {
+async function sendMail({ to, subject, html, text, attachments }) {
   const from = config.gmail.fromName
     ? `"${config.gmail.fromName}" <${config.gmail.user}>`
     : config.gmail.user;
 
-  const info = await transporter.sendMail({
+  const mailOptions = {
     from,
     to,
     subject,
     html,
     text,
     replyTo: config.gmail.replyTo || undefined,
-  });
+  };
+  if (attachments && attachments.length > 0) {
+    mailOptions.attachments = attachments;
+  }
+
+  const info = await transporter.sendMail(mailOptions);
 
   if (mode === 'gmail_api') {
     const sent = await gmailApi.sendRaw(info.message); // info.message === full MIME Buffer
