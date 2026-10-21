@@ -74,7 +74,7 @@ const config = {
     // Scan the inbox for bounces at the start of each run and mark those rows "Bounced".
     processBounces: bool('PROCESS_BOUNCES', true),
     bounceLookbackDays: int('BOUNCE_LOOKBACK_DAYS', 3),
-    subjectTemplate: process.env.EMAIL_SUBJECT || 'Reaching out about opportunities at {{company}}',
+    subjectTemplate: process.env.EMAIL_SUBJECT || 'Exploring Software Engineer / Backend Developer Opportunities at {{company}}',
   },
 };
 
