@@ -1,12 +1,15 @@
 Dear {{name}},
 
-I came across your opening for the {{job_title}} role at {{company}} and would like to apply.
+I’m reaching out to explore Software Engineer / Backend Developer opportunities at {{company}}.
 
 I'm a Software Engineer with 2+ years of experience in full-stack development, backend engineering, and AI-powered applications. I have hands-on experience with Python, FastAPI, JavaScript, TypeScript, React.js, Node.js, REST APIs, and AWS, along with experience building RAG-based AI applications and real-time voice AI systems.
 
-I've also solved 1,000+ coding problems across platforms such as LeetCode, CodeChef, and Codeforces, demonstrating strong problem-solving and competitive programming skills.
+I have a strong problem-solving and competitive programming background, with 1,000+ coding problems solved across platforms:
+- LeetCode: Max rating 1805 (Top 8%), with 601 problems solved.
+- Codeforces: Max rating 1278 (Pupil), with 293 problems solved.
+- CodeChef: Max rating 1650 (3-Star), with 165 problems solved.
 
-Please find my resume linked below. I'd welcome the opportunity to discuss how my technical skills and experience could contribute to your team.
+Please find my resume and profiles linked below. I'd welcome the opportunity to discuss how my technical skills, engineering experience, and problem-solving abilities could contribute to your engineering team.
 
 Resume: https://drive.google.com/file/d/1arZcjbQ6vfmYWtKeRWUGIAeMDyFDhQh2/view
 GitHub: https://github.com/aditisharma32
