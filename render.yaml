@@ -1,0 +1,41 @@
+# Render blueprint: a single web service. Scheduling is done externally by
+# cron-job.org hitting POST /api/send-campaign (see README > Scheduling).
+# Set the `sync: false` secrets in the Render dashboard after the first deploy.
+services:
+  - type: web
+    name: job-mail-automation
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    healthCheckPath: /health
+    envVars:
+      # Render blocks outbound SMTP (465) and IMAP (993) — must use the Gmail API.
+      - key: MAIL_TRANSPORT
+        value: gmail_api
+      - key: EMAIL_USER
+        sync: false
+      - key: EMAIL_FROM_NAME
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: GOOGLE_CLIENT_SECRET
+        sync: false
+      - key: GOOGLE_REFRESH_TOKEN
+        sync: false
+      - key: GOOGLE_SHEET_API
+        sync: false
+      - key: GOOGLE_SHEET_API_TOKEN
+        sync: false
+      - key: CAMPAIGN_SECRET
+        generateValue: true
+      - key: BATCH_SIZE
+        value: "15"
+      - key: SEND_DELAY_MS
+        value: "1500"
+      - key: RETRY_FAILED
+        value: "false"
+      - key: PROCESS_BOUNCES
+        value: "true"
+      - key: BOUNCE_LOOKBACK_DAYS
+        value: "3"

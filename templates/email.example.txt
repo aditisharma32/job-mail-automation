@@ -1,0 +1,20 @@
+Dear {{name}},
+
+I came across your opening for the {{job_title}} role at {{company}} and would like to apply.
+
+I'm a Software Engineer with 2+ years of experience in full-stack development, backend engineering, and AI-powered applications. I have hands-on experience with Python, FastAPI, JavaScript, TypeScript, React.js, Node.js, REST APIs, and AWS, along with experience building RAG-based AI applications and real-time voice AI systems.
+
+I've also solved 1,000+ coding problems across platforms such as LeetCode, CodeChef, and Codeforces, demonstrating strong problem-solving and competitive programming skills.
+
+Please find my resume linked below. I'd welcome the opportunity to discuss how my technical skills and experience could contribute to your team.
+
+Resume: https://drive.google.com/file/d/1arZcjbQ6vfmYWtKeRWUGIAeMDyFDhQh2/view
+GitHub: https://github.com/aditisharma32
+LinkedIn: https://www.linkedin.com/in/aditi-sharma-dev/
+
+Thank you for your time and consideration.
+
+Best regards,
+Aditi Sharma
++91-9079092859
+aditisharma0032@gmail.com
