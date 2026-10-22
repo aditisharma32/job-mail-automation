@@ -15,8 +15,8 @@
  *   5. Executions tab: keepWarm should log 200, sendCampaign 202 (or 409 if a
  *      run overlaps - both fine).
  */
-var SERVICE_URL = 'https://YOUR-SERVICE.onrender.com';
-var CAMPAIGN_SECRET = 'PUT_THE_RENDER_CAMPAIGN_SECRET_HERE';
+var SERVICE_URL = 'https://job-mail-automation-8rnx.onrender.com';
+var CAMPAIGN_SECRET = 'bdd634a9d242590d69dfac6e69d21aab3ec41999a5596d23';
 
 function keepWarm() {
   var res = UrlFetchApp.fetch(SERVICE_URL + '/health', { muteHttpExceptions: true });
