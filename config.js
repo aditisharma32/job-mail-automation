@@ -67,8 +67,8 @@ const config = {
   },
 
   campaign: {
-    batchSize: int('BATCH_SIZE', 20),
-    sendDelayMs: int('SEND_DELAY_MS', 2500),
+    batchSize: int('BATCH_SIZE', 25),
+    sendDelayMs: int('SEND_DELAY_MS', 2100),
     retryFailed: bool('RETRY_FAILED', false),
     dryRun: bool('DRY_RUN', false),
     // Scan the inbox for bounces at the start of each run and mark those rows "Bounced".

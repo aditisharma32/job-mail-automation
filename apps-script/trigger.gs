@@ -18,17 +18,21 @@
 var SERVICE_URL = 'https://job-mail-automation-8rnx.onrender.com';
 var CAMPAIGN_SECRET = 'bdd634a9d242590d69dfac6e69d21aab3ec41999a5596d23';
 
+function baseUrl() {
+  return (SERVICE_URL || '').trim().replace(/\/+$/, '');
+}
+
 function keepWarm() {
-  var res = UrlFetchApp.fetch(SERVICE_URL + '/health', { muteHttpExceptions: true });
+  var res = UrlFetchApp.fetch(baseUrl() + '/health', { muteHttpExceptions: true });
   if (res.getResponseCode() !== 200) {
     console.warn('keepWarm ' + res.getResponseCode() + ': ' + res.getContentText().slice(0, 200));
   }
 }
 
 function sendCampaign() {
-  var res = UrlFetchApp.fetch(SERVICE_URL + '/api/send-campaign', {
+  var res = UrlFetchApp.fetch(baseUrl() + '/api/send-campaign', {
     method: 'post',
-    headers: { 'x-campaign-secret': CAMPAIGN_SECRET },
+    headers: { 'x-campaign-secret': CAMPAIGN_SECRET.trim() },
     muteHttpExceptions: true,
   });
   var code = res.getResponseCode();
@@ -39,8 +43,8 @@ function sendCampaign() {
 
 /** Run manually to see the last run's summary in the logs. */
 function checkLastRun() {
-  var res = UrlFetchApp.fetch(SERVICE_URL + '/api/last-run', {
-    headers: { 'x-campaign-secret': CAMPAIGN_SECRET },
+  var res = UrlFetchApp.fetch(baseUrl() + '/api/last-run', {
+    headers: { 'x-campaign-secret': CAMPAIGN_SECRET.trim() },
     muteHttpExceptions: true,
   });
   console.log(res.getContentText());
